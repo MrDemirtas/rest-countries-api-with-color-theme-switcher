@@ -1,4 +1,4 @@
-import { data } from "../js/data.jsx";
+import { data } from "../data/data.jsx";
 
 function Card() {
   return (

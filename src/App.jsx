@@ -1,6 +1,7 @@
 import Header from "./assets/components/header.jsx";
 import Input from "./assets/components/input.jsx";
-import Card from "./assets/components/card.jsx";
+// import Card from "./assets/components/card.jsx";
+import CardDetails from "./assets/components/card-details.jsx";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Header />
       <div className="container">
         <Input />
-        <Card />
+        <CardDetails />
       </div>
     </>
   );

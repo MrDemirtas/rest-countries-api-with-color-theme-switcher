@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  font-family: "Nunito Sans", system-ui;
+  color: #111517;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 16px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px #0000000e;
+
+  h1 {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 20px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.37px;
+  }
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 14px 32px;
+  box-shadow: 0px 2px 9px 0px #0000000e;
+  margin-top: 20px;
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.select-container {
+  margin-top: 40px;
+  max-width: 200px;
+  select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 14px 24px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 2px 9px 0px #0000000e;
+  }
+}
+
+.card-container {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 32px;
+
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 9px 0px #0000000e;
+    max-width: 264px;
+    
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .card-info {
+      padding: 24px;
+    }
+  }
+}
+

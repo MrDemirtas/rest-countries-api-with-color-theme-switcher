@@ -12,7 +12,7 @@ export const getCountryIndex = (country) => data.indexOf(data.find((item) => ite
 
 function getCard(country, onCardClick) {
   return (
-    <div onClick={() => onCardClick(getCountryIndex(country))} className="card" key={country.name.common}>
+    <div onClick={() => onCardClick(getCountryIndex(country))} className="card" key={country.cca3}>
       <img src={country.flags.png} alt="flag" />
       <div className="card-info">
         <h2>{country.name.common}</h2>

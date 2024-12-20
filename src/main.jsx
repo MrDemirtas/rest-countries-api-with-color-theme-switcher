@@ -6,7 +6,7 @@ import "./assets/css/dark-mode.css";
 import "./assets/css/main.css";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
+  // <StrictMode>
     <App />
-  </StrictMode>
+  // </StrictMode>
 );

@@ -1,24 +1,33 @@
 import { data } from "../data/data.jsx";
 
-function Card() {
+function Card({ onCardClick }) {
   return (
     <>
-      <div className="card-container">
-        {data.map((item) => getCard(item))}
-      </div>
+      <div className="card-container">{data.map((country) => getCard(country, onCardClick))}</div>
     </>
   );
-}
+} 
 
-function getCard(props) {
+export const getCountryIndex = (country) => data.indexOf(data.find((item) => item.name.common === country.name.common));
+
+function getCard(country, onCardClick) {
   return (
-    <div className="card" key={props.name.common}>
-      <img src={props.flags.png} alt="flag" />
+    <div onClick={() => onCardClick(getCountryIndex(country))} className="card" key={country.name.common}>
+      <img src={country.flags.png} alt="flag" />
       <div className="card-info">
-        <h2>{props.name.common}</h2>
-        <p><strong>Population: </strong>{props.population}</p>
-        <p><strong>Region: </strong>{props.region}</p>
-        <p><strong>Capital: </strong>{props.capital}</p>
+        <h2>{country.name.common}</h2>
+        <p>
+          <strong>Population: </strong>
+          {country.population}
+        </p>
+        <p>
+          <strong>Region: </strong>
+          {country.region}
+        </p>
+        <p>
+          <strong>Capital: </strong>
+          {country.capital}
+        </p>
       </div>
     </div>
   );

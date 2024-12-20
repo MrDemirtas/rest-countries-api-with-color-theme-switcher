@@ -39,7 +39,7 @@ function GetCardDetails({ country, backToCard, onClickBorderCountry }) {
 
             <div className="card-details-second-info">
               <p>
-                <strong>Top Level Domain:</strong> {country.tld}
+                <strong>Top Level Domain:</strong> {country.tld.join(", ")}
               </p>
               <p>
                 <strong>Currencies:</strong>{" "}
